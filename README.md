@@ -17,7 +17,7 @@ Blacktone makes a few core assumptions:
 - - ~~Blacktone is accessible during post-install chroot~~
 
 
-## Curated software and configurations
+## Curated Software and Configurations
 
 Some software is installed or enabled at user discretion. Blacktone may or will install (including dependencies):
 - reflector
