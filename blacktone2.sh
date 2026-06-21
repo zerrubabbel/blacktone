@@ -30,9 +30,27 @@ clear
 
 # RUN blacktone3.sh
 
-#git clone https://github.com/zerrubabbel/blacktone2
+git clone https://github.com/zerrubabbel/blacktone2.git "$HOME/.blacktone2/"
 
-#bash $HOME/PATH/TO/blacktone3.sh
+bash "$HOME/blacktone2/blacktone3.sh"
 
 # REBOOT
 
+echo "This is the end of Blacktone setup."
+sleep 2
+echo "It is recommended to reboot your system."
+sleep 2
+
+end-setup() {
+    local reboot_choice
+    
+    read -rp "Would you like to reboot now? [Y/n] " reboot_choice
+
+    if [[ "$reboot_choice" =~ ^[Nn]$ ]]; then
+        exit 0
+    else
+        sudo reboot
+    fi
+}
+
+end-setup
