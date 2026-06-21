@@ -1,13 +1,55 @@
 # BLACKTONE
+
 Personal Arch configuration script
 
+**WARNING:  BUILD IN PROGRESS. DO NOT RUN SCRIPT YET!!**
 
 # Description
+
+Blacktone is opinionated, and builds an Arch Linux desktop according to my personal needs and preferences. It makes a few core assumptions:
+- User has read and understands the script
+- User understands the software and configurations that will be installed and set before executing
+- systemd as the init system
+- A clean base Arch installation is complete, bootable, and ready for a desktop to be constructed
+-   Desired drivers should be set, and NetworkManager should be configured with default (not iwd) backend
+-   ~~Blacktone is accessible during post-install chroot~~
 
 
 ## Curated software and configurations
 
+Some software is installed or enabled at user discretion. Blacktone may or will install (including dependencies):
+- reflector
+- nano kitty fastfetch ufw bluez btop
+- noto-fonts-cjk
+- gnome gdm
+- plasma cinnamon cosmic dolphin sddm
+- vlc gimp steam obsidian
+- Flatpak: brave extension-manager ProtonupQT cosmic-tweaks
+
+- Services will be enabled
+-   gdm is used by default, but a prompt to switch to sddm is included
+
+Blacktone provides configurations for:
+- /etc/environment
+- /etc/pacman.conf
+- /etc/pacman.d/mirrorlist
+- $HOME/.bashrc
+- kitty
+- fastfetch
+In Progress
+- COSMIC
+- Cinnamon
+
+Included Aesthetics
+- Bibata-Original-Classic cursor
+- BeautyDream icons
+- A wallpaper collection is included, and placed in ~/Pictures/Wallpeppers
 
 # Steps For Use
+
+Prerequisites
+1. 
+
+# Rationales
 
 
