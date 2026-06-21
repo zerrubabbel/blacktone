@@ -1,3 +1,4 @@
+# blacktone1.sh
 # ENVIRONMENT CHECKS
 
 if [[ ! -f /etc/arch-release ]]; then
