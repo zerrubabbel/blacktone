@@ -32,7 +32,7 @@ clear
 
 git clone https://github.com/zerrubabbel/blacktone2.git "$HOME/.blacktone2/"
 
-bash "$HOME/blacktone2/blacktone3.sh"
+bash "$HOME/.blacktone2/blacktone3.sh"
 
 # REBOOT
 
