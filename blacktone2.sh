@@ -41,7 +41,7 @@ sleep 2
 echo "It is recommended to reboot your system."
 sleep 2
 
-end-setup() {
+end_setup() {
     local reboot_choice
     
     read -rp "Would you like to reboot now? [Y/n] " reboot_choice
@@ -53,4 +53,4 @@ end-setup() {
     fi
 }
 
-end-setup
+end_setup
