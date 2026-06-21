@@ -60,24 +60,24 @@ pacup() {
 
 	read -rp "Update Flatpaks? [Y/n] " flatpak_choice
 	read -rp "Update Core, Extra, and Multilib? [Y/n] " pacman_choice
-  read -rp "Remove orphaned packages? [Y/n] " orphan_choice
-  read -rp "Remove unused Flatpak runtimes? [Y/n] " flatpak_orphan_choice
+	read -rp "Remove orphaned packages? [Y/n] " orphan_choice
+	read -rp "Remove unused Flatpak runtimes? [Y/n] " flatpak_orphan_choice
 
-  if [[ -z "$flatpak_choice" || "$flatpak_choice" =~ ^[Yy]$ ]]; then
-    flatpak update
-  fi
+	if [[ -z "$flatpak_choice" || "$flatpak_choice" =~ ^[Yy]$ ]]; then
+    	flatpak update
+  	fi
 
-  if [[ -z "$pacman_choice" || "$pacman_choice" =~ ^[Yy]$ ]]; then
-    sudo pacman -Syu
-  fi
+  	if [[ -z "$pacman_choice" || "$pacman_choice" =~ ^[Yy]$ ]]; then
+    	sudo pacman -Syu
+  	fi
 
-  if [[ -z "$orphan_choice" || "$orphan_choice" =~ ^[Yy]$ ]]; then
-    remove-orphans
-  fi
+  	if [[ -z "$orphan_choice" || "$orphan_choice" =~ ^[Yy]$ ]]; then
+    	remove-orphans
+  	fi
 
-  if [[ -z "$flatpak_orphan_choice" || "$flatpak_orphan_choice" =~ ^[Yy}$ ]]; then
-    flatpak uninstall --unused
-  fi
+  	if [[ -z "$flatpak_orphan_choice" || "$flatpak_orphan_choice" =~ ^[Yy}$ ]]; then
+    	flatpak uninstall --unused
+  	fi
 }
 
 remove-orphans() {
@@ -105,17 +105,17 @@ alias "mirrors-restore"="sudo cp /etc/pacman.d/mirrorlist.bak /etc/pacman.d/mirr
 mirrors() {
 	local count
 	local country
-  local backup
-  local target
+	local backup
+	local target
 
-  read -rp "Save current mirrorlist as a backup? [Y/n]" backup
+	read -rp "Save current mirrorlist as a backup? [Y/n]" backup
 
-  if [[ -z "$backup" || "$backup" =~ ^[Yy]$ ]]; then
-    echo "Copying mirrorlist to /etc/pacman.d/mirrorlist.bak... "
-    mirrors-bak
-  else
-    echo "Mirrors will be overwritten... "
-  fi
+	if [[ -z "$backup" || "$backup" =~ ^[Yy]$ ]]; then
+    	echo "Copying mirrorlist to /etc/pacman.d/mirrorlist.bak... "
+    	mirrors-bak
+  	else
+    	echo "Mirrors will be overwritten... "
+  	fi
 
 	read -rp "How many mirrors? [30] " count
 	count="${count:-30}"
@@ -123,8 +123,8 @@ mirrors() {
 	read -rp "Which country? [United States] " country
 	country="${country:-United States}"
 
-  read -rp "Save to: _____ ? [/etc/pacman.d/mirrorlist] " target
-  target="${target:-/etc/pacman.d/mirrorlist}"
+	read -rp "Save to: _____ ? [/etc/pacman.d/mirrorlist] " target
+	target="${target:-/etc/pacman.d/mirrorlist}"
 
 	sudo reflector \
 		--verbose \
