@@ -11,8 +11,8 @@ Blacktone is opinionated, and builds an Arch Linux desktop according to my perso
 - User understands the software and configurations that will be installed and set before executing
 - systemd as the init system
 - A clean base Arch installation is complete, bootable, and ready for a desktop to be constructed
--   Desired drivers should be set, and NetworkManager should be configured with default (not iwd) backend
--   ~~Blacktone is accessible during post-install chroot~~
+- - Desired drivers should be set, and NetworkManager should be configured with default (not iwd) backend
+- - ~~Blacktone is accessible during post-install chroot~~
 
 
 ## Curated software and configurations
@@ -25,7 +25,6 @@ Some software is installed or enabled at user discretion. Blacktone may or will 
 - plasma cinnamon cosmic dolphin sddm
 - vlc gimp steam obsidian
 - Flatpak: brave extension-manager ProtonupQT cosmic-tweaks
-
 - Services will be enabled
 -   gdm is used by default, but a prompt to switch to sddm is included
 
