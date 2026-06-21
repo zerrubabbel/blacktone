@@ -56,7 +56,7 @@ echo "Optimizin pacman mirrors"
 
 mirrors-bak() {
   sudo cp /etc/pacman.conf /etc/pacman.conf.bak
-  #curl pacman.conf
+  curl -fsSL https://raw.githubusercontent.com/zerrubabbel/blacktone/refs/heads/main/pacman.conf?token=GHSAT0AAAAAAEAQZRTJ2HYRTERQYIEM6FRO2RYNS5A "/etc/pacman.conf
   sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
 }
 
