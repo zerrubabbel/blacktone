@@ -26,7 +26,7 @@ Some software is installed or enabled at user discretion. Blacktone may or will 
 - vlc gimp steam obsidian
 - Flatpak: brave extension-manager ProtonupQT cosmic-tweaks
 - Services will be enabled
--   gdm is used by default, but a prompt to switch to sddm is included
+- gdm is used by default, but a prompt to switch to sddm is included
 
 Blacktone provides configurations for:
 - /etc/environment
