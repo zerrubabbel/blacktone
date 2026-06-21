@@ -30,7 +30,7 @@ echo " "
 echo "1. You have a ready and bootable base install of Arch Linux"
 echo "2. You are using systemd"
 echo "3. You are familiar with the curated software and configurations provided by Blacktone"
-echo "    - See README.md for details
+echo "    - See README.md for details"
 echo " "
 echo "If ANY of these conditions are not met, please exit this script"
 sleep 3
@@ -56,7 +56,11 @@ echo "Optimizin pacman mirrors"
 
 mirrors-bak() {
   sudo cp /etc/pacman.conf /etc/pacman.conf.bak
-  curl -fsSL https://raw.githubusercontent.com/zerrubabbel/blacktone/refs/heads/main/pacman.conf?token=GHSAT0AAAAAAEAQZRTJ2HYRTERQYIEM6FRO2RYNS5A "/etc/pacman.conf
+
+  curl -fsSL \
+  https://raw.githubusercontent.com/zerrubabbel/blacktone/main/pacman.conf \
+  | sudo tee /etc/pacman.conf >/dev/null
+  
   sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
 }
 
@@ -126,11 +130,11 @@ echo "This is the end of Blacktone part 1. A system reboot is required to comple
 sleep 3
 
 intermission() {
-  local restart_choice
+  local reboot_choice
 
-  read -rp "Would you like to reboot now? [Y/n] " restart_choice
+  read -rp "Would you like to reboot now? [Y/n] " reboot_choice
 
-  if [[ -z "$reboot_choice" || "$reboot_choice" !=~ ^[Nn]$ ]]; then
+  if [[ -z "$reboot_choice" || ! "$reboot_choice" =~ ^[Nn]$ ]]; then
     echo "Rebooting... "
     sleep 3
     sudo reboot -f
