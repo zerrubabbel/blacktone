@@ -41,7 +41,7 @@ readyup() {
 
   echo "Are the prerequisite conditions met, and do you wish to continue?"
 
-  read -rp "to continue, type exactly 'yes' and press enter"  " readystate
+  read -rp "to continue, type exactly 'yes' and press enter  " readystate
 
   if [[ "$readystate" != "yes" ]]; then
     echo "exiting blacktone1.sh"
