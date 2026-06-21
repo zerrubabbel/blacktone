@@ -6,7 +6,9 @@ Personal Arch configuration script
 
 # Description
 
-Blacktone is opinionated, and builds an Arch Linux desktop according to my personal needs and preferences. It makes a few core assumptions:
+Blacktone is opinionated, and builds an Arch Linux desktop according to my personal needs and preferences. Use at your own discretion.
+
+Blacktone makes a few core assumptions:
 - User has read and understands the script
 - User understands the software and configurations that will be installed and set before executing
 - systemd as the init system
@@ -26,7 +28,7 @@ Some software is installed or enabled at user discretion. Blacktone may or will 
 - vlc gimp steam obsidian
 - Flatpak: brave extension-manager ProtonupQT cosmic-tweaks
 - Services will be enabled
-- gdm is used by default, but a prompt to switch to sddm is included
+- - gdm is used by default, but a prompt to switch to sddm is included
 
 Blacktone provides configurations for:
 - /etc/environment
