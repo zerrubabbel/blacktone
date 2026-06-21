@@ -30,9 +30,9 @@ nap() {
   	read -rp "Time in minutes? [30] " minutes
   	minutes="${minutes:-30}"
 
- 	 sudo shutdown \
-  	  -f \
-  	  +"$minutes"
+ 	sudo shutdown \
+		-f \
+		+"$minutes"
 }
 
 pings() {
