@@ -25,29 +25,29 @@ alias ".."="cd .."
 alias "..."="cd ../.."
 
 nap() {
-  local minutes
+  	local minutes
 
-  read -rp "Time in minutes? [30] " minutes
-  minutes="${minutes:-30}"
+  	read -rp "Time in minutes? [30] " minutes
+  	minutes="${minutes:-30}"
 
-  sudo shutdown \
-    -f \
-    +"$minutes"
+ 	 sudo shutdown \
+  	  -f \
+  	  +"$minutes"
 }
 
 pings() {
-  local count
-  local target
+  	local count
+  	local target
 
-  read -rp "Ping count? [5] " count
-  count="${count:-5}"
+  	read -rp "Ping count? [5] " count
+  	count="${count:-5}"
 
-  read -rp "Target? [google.com] " target
-  target="${target:-google.com}"
+  	read -rp "Target? [google.com] " target
+  	target="${target:-google.com}"
 
-  ping \
-    -c "$count" \
-    "$target"
+  	ping \
+    	-c "$count" \
+    	"$target"
 }
 
 ## Pacman
