@@ -152,18 +152,18 @@ alias "notes"="cat ~/.arch-notes"
 ## REMINDER ##
 
 reminder () {
-  local reminders=(
-    "Intelligence is that which enables the arrival at more correct conclusions, and the finding of more winning strategies"
-    "Empathy is to treat others the way you want to be treated"
-    "Sympathy is to treat others the way theyd want to be treated"
-    "0th Degree Abstraction: focus on immediate concrete and tangible details as situations. Spontaneous, visceral, present."
-    "1st Degree Abstraction: focus on state changes between discrete situations. Procedural, stepwise, causal."
-    "2nd Degree Abstraction: focus on interactions between processes, inputs, mechanics. Systematic, dynamic, observant of nuance."
-    "3rd Degree Abstraction: focus on generalized similarities between systems. Associative, values framing and analogy"
-    "4th Degree Abstraction: focus on essential principles that span domains. Symbolic, values compression and elegance"
-    "Justice focuses on preserving and maintaining that which is rightful. Law focuses on compliance with statute."
-    "Good and Evil, and Law and Chaos, are two separate axes. Lawful Evil is a possible permutation."
-    "Question everything! Ideas worth believing meet their burden of proof."
+  	local reminders=(
+    	"Intelligence is that which enables the arrival at more correct conclusions, and the finding of more winning strategies"
+   		"Empathy is to treat others the way you want to be treated"
+   		"Sympathy is to treat others the way theyd want to be treated"
+    	"0th Degree Abstraction: focus on immediate concrete and tangible details as situations. Spontaneous, visceral, present."
+    	"1st Degree Abstraction: focus on state changes between discrete situations. Procedural, stepwise, causal."
+    	"2nd Degree Abstraction: focus on interactions between processes, inputs, mechanics. Systematic, dynamic, observant of nuance."
+   		"3rd Degree Abstraction: focus on generalized similarities between systems. Associative, values framing and analogy"
+    	"4th Degree Abstraction: focus on essential principles that span domains. Symbolic, values compression and elegance"
+    	"Justice focuses on preserving and maintaining that which is rightful. Law focuses on compliance with statute."
+    	"Good and Evil, and Law and Chaos, are two separate axes. Lawful Evil is a possible permutation."
+    	"Question everything! Ideas worth believing meet their burden of proof."
     )
 
     printf '%s\n' "${reminders[RANDOM % ${reminders[@]}]}"
