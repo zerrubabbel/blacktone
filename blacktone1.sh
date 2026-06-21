@@ -55,7 +55,7 @@ readyup
 
 echo "Optimizin pacman mirrors"
 
-mirrors-bak() {
+mirrors_bak() {
   sudo cp /etc/pacman.conf /etc/pacman.conf.bak
 
   curl -fsSL \
@@ -65,7 +65,7 @@ mirrors-bak() {
   sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
 }
 
-mirrors-bak
+mirrors_bak
 sudo pacman -Syu
 sudo pacman -S reflector
 
