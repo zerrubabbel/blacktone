@@ -96,7 +96,9 @@ sudo pacman -S --needed \
   bluez \
   btop \
   fastfetch \
-  nano
+  nano \
+  base-devel \
+  git
 
 echo "Enabling services... "
 sudo systemctl enable bluetooth.service
