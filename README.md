@@ -37,9 +37,9 @@ Blacktone provides configurations for:
 - $HOME/.bashrc
 - kitty
 - fastfetch
-In Progress
-- COSMIC
-- Cinnamon
+- In Progress
+- - COSMIC
+- - Cinnamon
 
 Included Aesthetics
 - Bibata-Original-Classic cursor
