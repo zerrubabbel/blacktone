@@ -30,7 +30,15 @@ clear
 
 # RUN blacktone3.sh
 
-git clone https://github.com/zerrubabbel/blacktone2.git "$HOME/.blacktone2/"
+INSTALL_DIR="$HOME/.blacktone2"
+
+if [[ -d "$INSTALL_DIR/.git" ]]; then
+    git -C "$INSTALL_DIR" pull
+else
+    git clone \
+        https://github.com/zerrubabbel/blacktone2.git \
+        "$INSTALL_DIR"
+fi
 
 bash "$HOME/.blacktone2/blacktone3.sh"
 
