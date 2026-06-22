@@ -1,6 +1,8 @@
 # BLACKTONE
 
-Personal Arch configuration script
+Personal Arch configuration script. Blacktone is not meant for wide use, but may be used at user discretion.
+
+Support for Blacktone is not offered.
 
 **WARNING:  BUILD IN PROGRESS. DO NOT RUN SCRIPT YET!!**
 
