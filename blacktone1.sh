@@ -94,7 +94,7 @@ clear
 
 echo "Installing root and CLI software... "
 
-sudo pacman -S --needed \
+sudo pacman -S --needed --noconfirm\
   kitty \
   ufw \
   noto-fonts-cjk \
