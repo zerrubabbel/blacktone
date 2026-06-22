@@ -1,10 +1,10 @@
 # BLACKTONE
 
+**WARNING:  BUILD IN PROGRESS. DO NOT RUN SCRIPT YET!!**
+
 Personal Arch configuration script. Blacktone is not meant for wide use, but may be used at user discretion.
 
 Support for Blacktone is not offered.
-
-**WARNING:  BUILD IN PROGRESS. DO NOT RUN SCRIPT YET!!**
 
 Blacktone config files and blacktone3.sh are hosted and auditable on the companion repo at: https://github.com/zerrubabbel/blacktone2
 
