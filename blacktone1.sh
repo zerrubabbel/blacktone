@@ -53,7 +53,7 @@ readyup
 
 # PACMAN MIRRORS
 
-echo "Optimizin pacman mirrors"
+echo "Optimizing pacman mirrors... "
 
 mirrors_bak() {
   sudo cp /etc/pacman.conf /etc/pacman.conf.bak
