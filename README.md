@@ -4,6 +4,8 @@ Personal Arch configuration script
 
 **WARNING:  BUILD IN PROGRESS. DO NOT RUN SCRIPT YET!!**
 
+Blacktone config files and blacktone3.sh are hosted and auditable on the companion repo at: https://github.com/zerrubabbel/blacktone2
+
 # Description
 
 Blacktone is opinionated, and builds an Arch Linux desktop according to my personal needs and preferences. Use at your own discretion.
