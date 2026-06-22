@@ -55,9 +55,9 @@ Included Aesthetics
 Prerequisites
 1. 
 
-curl -fsSL https://raw.githubusercontent.com/zerrubabbel/blacktone/refs/heads/main/blacktone1.sh?token=GHSAT0AAAAAAEAQZRTJRJWP747LHMJ7C73C2RYNEGQ | bash
+curl -fsSL https://raw.githubusercontent.com/zerrubabbel/blacktone/main/blacktone1.sh -o blacktone1.sh
 
-curl -fsSL https://raw.githubusercontent.com/zerrubabbel/blacktone/main/blacktone1.sh | bash
+bash blacktone1.sh
 
 complete and reboot
 
