@@ -61,7 +61,9 @@ bash blacktone1.sh
 
 complete and reboot
 
-curl -fsSL https://raw.githubusercontent.com/zerrubabbel/blacktone/refs/heads/main/blacktone2.sh?token=GHSAT0AAAAAAEAQZRTJMIYIQBRFM5FZNSNI2RYNHBQ | bash
+furl -fsSL https//raw.githubusercontent.com/zerrubabbel/blacktone/main/blacktone2.sh -o blacktone2.sh
+
+bash blacktone2.sh
 
 # Rationales
 
