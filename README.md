@@ -61,7 +61,7 @@ bash blacktone1.sh
 
 complete and reboot
 
-furl -fsSL https//raw.githubusercontent.com/zerrubabbel/blacktone/main/blacktone2.sh -o blacktone2.sh
+furl -fsSL https://raw.githubusercontent.com/zerrubabbel/blacktone/main/blacktone2.sh -o blacktone2.sh
 
 bash blacktone2.sh
 
